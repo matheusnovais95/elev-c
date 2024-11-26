@@ -1,0 +1,289 @@
+/* styles.css */
+
+/* Variáveis globais */
+:root {
+  /* Fontes */
+  --font-family-base: "Montserrat", sans-serif;
+
+  /* Cores primárias */
+  --primary-color: #000024;
+  --primary-variation-color: #111135;
+
+  /* Cores secundárias */
+  --secondary-color: #f6571c;
+  --secondary-variation-color: #e53e00;
+
+  /* Cor terciária */
+  --tertiary-color: #25eb50;
+
+  /* Cores de fonte */
+  --font-primary-color: #f6571c;
+  --font-secondary-color: #ffffff;
+  --font-tertiary-color: #111135;
+}
+
+body {
+  font-family: var(--font-family-base);
+}
+
+.logo {
+  color: var(--secondary-color);
+}
+
+/* Banner */
+.banner-container {
+  position: relative;
+  height: 700px;
+  overflow: hidden;
+}
+
+.banner-image {
+  position: absolute;
+  top: 0;
+  left: 150px;
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.banner-image.active {
+  opacity: 1;
+}
+
+/* Botão flutuante */
+.floating-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--secondary-color);
+  color: var(--font-secondary-color);
+  border: none;
+  border-radius: 50%;
+  padding: 15px;
+  font-size: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+/* Classes para cores de fundo */
+.bg-primary-color {
+  background-color: var(--primary-color);
+}
+
+.bg-primary-variation {
+  background-color: var(--primary-variation-color);
+}
+
+.bg-secondary {
+  background-color: var(--secondary-color);
+}
+
+.bg-secondary-variation {
+  background-color: var(--secondary-variation-color);
+}
+
+.bg-tertiary {
+  background-color: var(--tertiary-color);
+}
+
+/* Classes para cores de texto */
+.text-primary {
+  color: var(--font-primary-color);
+}
+
+.text-secondary {
+  color: var(--font-secondary-color);
+}
+
+.text-tertiary {
+  color: var(--font-tertiary-color);
+}
+
+/* Classes para bordas */
+.border-primary {
+  border: 1px solid var(--primary-color);
+}
+
+.border-secondary {
+  border: 1px solid var(--secondary-color);
+}
+
+.border-tertiary {
+  border: 1px solid var(--tertiary-color);
+}
+
+/* Altura header */
+
+.header-height {
+  height: 100px;
+}
+
+.title-banner-image{
+    font-size: 50px;
+}
+
+.title-chamada-sorteio,
+.title-banner-image,
+.title-ultimos-ganhadores {
+  color: white;
+  font-size: bold;
+}
+
+.title-chamada-sorteio spanm,
+.title-banner-image span,
+.title-ultimos-ganhadores span {
+  color: var(--secondary-color);
+}
+
+.title-ultimos-ganhadores span {
+  font-style: italic;
+}
+
+.card-shape {
+  transform: skew(-5deg);
+  padding: 10px;
+}
+
+.content-shape {
+  transform: skew(5deg);
+}
+
+.btn-content-shape {
+  transform: skew(-10deg);
+}
+
+.btn-content-shape-0 {
+  transform: skew(10deg);
+}
+
+.card {
+  background-color: var(--primary-color) !important;
+}
+
+.img-card {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+
+  border-radius: 7px;
+}
+
+.container-sorteio {
+  border: 1px solid var(--secundary-color);
+  border-radius: 10px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 60px;
+
+  padding: 12px 0;
+}
+
+.value-title {
+  color: var(--secondary-color);
+  font-size: 18px;
+
+  font-weight: bold;
+}
+
+.card-title {
+  font-weight: bold;
+  color: var(--secondary-color);
+  font-size: 16px;
+}
+
+.card-text {
+  color: white;
+}
+
+.btn-custom-primary {
+  background-color: var(--secondary-color);
+  border: none;
+  border-radius: 0 !important;
+  color: white;
+}
+
+.btn-custom-primary span {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.img-card-carousel {
+  max-height: 120px;
+}
+
+/* Estilos básicos para o carrossel */
+.carousel-container {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+.card {
+  margin: 0 10px; /* Espaçamento entre os cards */
+  flex: 0 0 auto; /* Impede a compressão dos itens */
+}
+.carousel-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+.carousel-nav button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+.carousel-nav button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#lista-sorteios {
+  gap: 20px;
+}
+
+.link-mostrar-mais {
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.container-title-banner {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: var(--primary-color);
+
+  width: 50%;
+  height: 100%;
+  z-index: 100;
+}
+
+@media (max-width: 768px) {
+  .container-sorteio {
+    gap: 20px;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .title-banner-image{
+    font-size: 20px;
+  }
+}

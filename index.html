@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="bg-primary-color text-secondary">
+    <header
+      class="d-flex justify-content-between align-items-center p-3 bg-primary-variation"
+    >
+      <div class="logo"><h3>LOGOLOGO</h3></div>
+      <nav>
+        <ul class="nav" id="menu-links">
+          <li class="nav-item">
+            <a href="#" class="nav-link text-white">Ver Bilhetes</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-white">Sorteios</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-white">Nosso Suporte</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-white">Resultados e Ganhadores</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-white">Nossos Termos</a>
+          </li>
+        </ul>
+      </nav>
+      <i class="fas fa-user-circle fa-2x text-secondary"></i>
+    </header>
+
+    <main class="container-fluid p-0">
+      <div class="banner-container mb-4">
+        <div class="container-title-banner">
+          <h2 class="title-banner-image text-center my-5">
+            A sua grande change de ganhar um grander prêmio chegou!
+          </h2>
+          <p class="text-white">
+            Agora é sua chance de ganhar! Confira os prêmios que você pode
+            ganhar em nossos sorteios. Você será nosso próximo sortudo?
+          </p>
+          <button
+            href="#"
+            class="btn btn-custom-primary btn-content-shape m-auto"
+          >
+            <span class="btn-content-shape-0 text-center">
+              participe agora
+            </span>
+          </button>
+        </div>
+        <img
+          src="/assets/banner/banner1.jpeg"
+          alt="Banner 1"
+          class="banner-image active"
+        />
+        <img
+          src="/assets/banner/banner2.jpeg"
+          alt="Banner 2"
+          class="banner-image"
+        />
+        <img
+          src="/assets/banner/banner3.jpeg"
+          alt="Banner 3"
+          class="banner-image"
+        />
+      </div>
+      <button class="floating-button">
+        <i class="fas fa-arrow-up"></i>
+      </button>
+
+      <div class="bg-primary-variation container-sorteio m-auto">
+        <section class="d-flex flex-column justify-content-center container">
+          <h3 class="title-chamada-sorteio text-center my-5">
+            Participe de <span>nossos sorteiros</span><br />Você também pode
+            ganhar!
+          </h3>
+          <div class="row d-flex justify-content-center" id="lista-sorteios">
+            <div class="col-md-4">
+              <div class="card text-secondary card-shape">
+                <div
+                  class="card-body content-shape d-flex flex-column justify-content-center"
+                >
+                  <img
+                    src="/assets/carrossel/carrossel1.png"
+                    class="img-card mb-2"
+                    alt="..."
+                  />
+                  <h5 class="card-title text-center">Sorteio n°: 02/2024</h5>
+                  <p class="card-text text-center">
+                    Sorteio de 13/04/24 às 18:00
+                  </p>
+                  <h4 class="card-text text-center">
+                    Título: <span class="value-title">R$ 0,99</span>
+                  </h4>
+                  <button
+                    href="#"
+                    class="btn btn-custom-primary btn-content-shape m-auto"
+                  >
+                    <span class="btn-content-shape-0 text-center">
+                      participe agora
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card text-secondary card-shape">
+                <div
+                  class="card-body content-shape d-flex flex-column justify-content-center"
+                >
+                  <img
+                    src="/assets/carrossel/carrossel2.png"
+                    class="img-card mb-2"
+                    alt="..."
+                  />
+                  <h5 class="card-title text-center">Sorteio n°: 02/2024</h5>
+                  <p class="card-text text-center">
+                    Sorteio de 13/04/24 às 18:00
+                  </p>
+                  <h4 class="card-text text-center">
+                    Título: <span class="value-title">R$ 0,99</span>
+                  </h4>
+                  <button
+                    href="#"
+                    class="btn btn-custom-primary btn-content-shape m-auto"
+                  >
+                    <span class="btn-content-shape-0 text-center">
+                      participe agora
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="mt-4">
+          <h3 class="title-ultimos-ganhadores text-center my-5">
+            Ultimos <span class="">Ganhadores</span>
+          </h3>
+
+          <div class="carousel-container">
+            <div class="carousel">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="/assets/carrossel/carrossel1.png"
+                  class="card-img-top img-card-carousel"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem">
+                <img
+                  src="/assets/carrossel/carrossel2.png"
+                  class="card-img-top img-card-carousel"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-nav">
+              <button class="prev">❮</button>
+              <button class="next">❯</button>
+            </div>
+          </div>
+        </section>
+        <div class="text-center">
+          <a class="link-mostrar-mais" href="#">Mostrar mais</a>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        let currentIndex = 0;
+        const totalItems = $(".carousel img").length;
+
+        function showSlide(index) {
+          const offset = -index * 100;
+          $(".carousel").css("transform", `translateX(${offset}%)`);
+        }
+
+        $(".next").click(function () {
+          currentIndex = (currentIndex + 1) % totalItems;
+          showSlide(currentIndex);
+        });
+
+        $(".prev").click(function () {
+          currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+          showSlide(currentIndex);
+        });
+
+        showSlide(currentIndex);
+      });
+      $(function () {
+        let current = 0;
+        const images = $(".banner-image");
+        setInterval(() => {
+          images.eq(current).removeClass("active");
+          current = (current + 1) % images.length;
+          images.eq(current).addClass("active");
+        }, 4000);
+      });
+    </script>
+  </body>
+</html>
